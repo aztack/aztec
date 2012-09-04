@@ -1,12 +1,12 @@
-/**
+/********************
  * Array
- */
-//# if defined :Native
-//#     define :Array,"Array.prototype"
+ ********************/
+//# if defined :NATIVE
+//#     define :ARRAY,"Array.prototype"
 //# else
-//#     define :Array,"aztec.array"
-$Array$ = { };
+//#     define :ARRAY,"aztec.array"
+$ARRAY$ = { };
 //# end
 (function (exports) {
     //#=include_dir './array/*.js'
-})($Array$);
+})($ARRAY$);

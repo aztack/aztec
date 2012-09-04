@@ -1,12 +1,12 @@
-/**
-* String
-*/
-//# if defined :Native
-//#     define :String,"String.prototype"
+/********************
+ * String
+ ********************/
+//# if defined :NATIVE
+//#     define :STRING,"String.prototype"
 //# else
-//#     define :String,"aztec.string"
-$String$ = { };
+//#     define :STRING,"aztec.string"
+$STRING$ = { };
 //# end
 (function (exports) {
     //#=include_dir './string/*.js'
-})($String$);
+})($STRING$);

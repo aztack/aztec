@@ -1,152 +1,179 @@
 #encoding:utf-8
 require 'erb'
 
-class JavaScriptPreprocessor2
-    def initialize(filepath,options = {})
-        @options = options
-        @path = filepath
-        @rawcode = File.open(filepath).read
-        @modified = []
-        @macros = {}
-        @macros.merge! options[:macros] || {}
-        @parent = options[:parent]
-        @result = nil
-        @erb = []
-    end
-    
-    attr_reader :options,:path,:rawcode,:defines,:macros,:result,:erb
-    
-    def const_missing(name)
-        unless @parent.nil?
-            @parent.send :const_get, name.to_sym
-        end
-    end
-    
-    def parse
-        @rawcode.split("\n").each do |line|
-            line.rstrip!
-            if m = line.match(/^(\s*)\/\/\s*#\s*(.*?)$/)
-                m = m.to_a
-                param = nil
-                code,space = m.pop,m.pop
-                if code =~ /[=]\s*include(?:_dir)?/
-                    param = ",'#{space}'"
+module JavaScript
+    class PreprocessorConst;end
+    class Preprocessor
+        Const = PreprocessorConst;
+        Included     = {}
+        def initialize(filepath,options = {})
+            @options = options
+            @path = filepath
+            @rawcode = File.open(filepath).read
+            @modified = []
+            #@macros = {}
+            if not options[:macros].nil?
+                #@macros.merge! options[:macros]
+                options[:macros].each do |k,v|
+                    k = k.to_sym
+                    if Const.constants.grep k
+                        Const.send :remove_const, k rescue nil
+                    end
+                    Const.send :const_set,k, v
                 end
-                erbcode = "#{space}<%#{code}#{param} %>"
-                if not @options[:keep_line_number].nil?
-                    @modified << erbcode
-                else
-                    if not @modified.size.zero?
-                        @modified[-1] << erbcode
+            end
+            @result = nil
+            @erb = []
+            @pass = 0
+            @parent = options[:parent]
+            @indent = options[:indent] || ''
+        end
+    
+        attr_reader :options,:path,:rawcode,:defines,:indent,:result,:erb
+    
+        def self.const_missing(name)
+            Const.send :const_get, name.to_sym rescue nil
+        end
+        
+        def parse
+            # first pass: define constants etc.
+            @pass = 1
+            @rawcode.split("\n").each do |line|
+                line.rstrip!
+                if m = line.match(/^(\s*)\/\/\s*#\s*(.*?)$/)
+                    m = m.to_a
+                    param = nil
+                    code,space = m.pop,m.pop
+                    if code =~ /[=]\s*include(?:_dir)?/
+                        param = ",'#{space}'"
+                    end
+                    erbcode = "#{space}<%#{code}#{param} %>"
+                    if @options[:keep_line_number].nil?
+                        if not @modified.size.zero?
+                            @modified[-1] << erbcode
+                        else
+                            @modified << erbcode
+                        end
                     else
                         @modified << erbcode
                     end
-                end
-            else
-                @modified << line
-            end
-        end
-        @erb << @modified.dup
-        ERB.new(@modified.join("\n")).result(binding)
-        @modified.each_with_index do |line,i|
-            if line !~ /^\s*<%.*?%>\s*$/ and line.match /\S/
-                @macros.each do |name,_|
-                    if name =~ /^[A-Z]/
-                        pattern = "$#{name}$"
-                        if line[pattern]
-                            @modified[i] = line.gsub(pattern,"<%= #{name}%>")
-                        end
-                    end
+                else
+                    @modified << line
                 end
             end
+            @erb << @modified.dup
+            ERB.new(@modified.join("\n")).result(binding)
+            
+            # 2nd pass: substitution and code generation
+            @pass = 2
+            @modified.each_with_index do |line,i|
+                next if line.empty?
+                @modified[i] = line.gsub /\$(.*?)\$/ do |match|
+                    name = match.gsub /^\$|\$$/,''
+                    Const.constants.grep(name) ? "<%=#{name}%>" : match
+                end
+            end
+            indent = @options[:indent] || ""
+            indent += @parent.indent unless @parent.nil?
+            @modified = indent + @modified.join("\n" + indent)
+            @result = ERB.new(@modified).result binding
+            self
         end
-        indent = @options[:indent] || ""
-        @modified = indent + @modified.join("\n" + indent)
-        @result = ERB.new(@modified).result binding
-        self
-    end
     
-    def include(path, indent = "")
-        realpath = File.expand_path(path,File.dirname(@path));
-        parser = self.class.new(realpath,{
-            :parent => self,
-            :indent => indent,
-            :macros => @macros
-        })
-        parser.parse
-        @macros.merge! parser.macros
-		@erb.concat parser.erb
-        if @options[:output_include_file]
-            "\n" + indent + "//#{path}" + parser.result
-        else
-            "\n" + parser.result.sub(/^\n/,'')
-        end
-    end
-    
-    def include_dir(dir,indent = "")
-        result = [];
-        Dir[File.expand_path(dir,File.dirname(@path))].each do |path|
-            result << include(path, indent)
-        end
-        result.join
-    end
-    
-    def define(*args)
-        args.flatten!
-        name = args.first.to_sym
+        def include(path, indent = "")
+            return if @pass === 1
+            realpath = File.expand_path(path,File.dirname(@path));
+            parser = self.class.new(realpath,{
+                :indent => indent,
+                :parent => self
+                #:macros => @macros
+            })
+            parser.parse
+            #@macros.merge! parser.macros
+		    @erb.concat parser.erb
         
-        if name =~ /^[A-Z]/
-            value = block_given? ? yield : args.last
-            if self.class.constants.grep name
-                self.class.send :remove_const, name rescue nil
-            end
-            self.class.send :const_set, name, value
-        else
-            if block_given?
-                self.class.send :define_method, name, yield
+            if @options[:output_include_file]
+                "\n" + indent + "//#{path}" + parser.result
             else
-                value = Proc.new{ return args.last}
-                self.class.send :define_method, name do
-                    return args.last
-                end
+                "\n" + parser.result.sub(/^\n/,'')
             end
         end
-        @macros[name] = value.respond_to?(:call) ? value.call : value
-        self
-    end
-    
-    def undefine(name)
-        if name.to_s =~ /^[A-Z]/
-            self.class.send :remove_const, name
-        else
-            self.class.send :remove_method, name
+        
+        #bug
+        def include_once(path,indent = "")
+            unless Included[path]
+                include path,indent
+                Included[path] = true
+            end
+            ''
         end
-        @macros.delete name
-        self
-    end
     
-    def defined(key,value = nil)
-        value.nil? ? (!!@macros[key]) : (@macros[key] == value) 
+        def include_dir(dir,indent = "")
+            return if @pass === 1
+            result = [];
+            Dir[File.expand_path(dir,File.dirname(@path))].each do |path|
+                result << include(path, indent)
+            end
+            result.join
+        end
+    
+        def define(*args)
+            args.flatten!
+            name = args.first.to_sym
+        
+            if name =~ /^[A-Z0-9_]+$/
+                value = block_given? ? yield : args.last
+                if Const.constants.grep name
+                    Const.send :remove_const, name rescue nil
+                end
+                Const.send :const_set, name, value
+            else
+                raise "`#{name}':defined constant must match agaist! /^[A-Z0-9_]+$/"
+            end
+            #@macros[name] = value.respond_to?(:call) ? value.call : value
+            self
+        end
+    
+        def undefine(name)
+            Const.send :remove_const, name.to_sym rescue nil
+            self
+        end
+    
+        def defined(key,value = nil)
+            key = key.to_sym
+            v = Const.send(:const_get,key) rescue nil
+            value.nil? ? (!!v) : (v == value) 
+        end
     end
 end
 
 if $0 === __FILE__
-    #JavaScriptCodeBuilderLanguageParser.new(File.read('./src/lang/string.js'))
-    puts JavaScriptPreprocessor2.new('./src/aztec.js').parse.result
+    $stdout.puts JavaScript::Preprocessor.new('./src/aztec.js',{
+        :keep_line_number => true,
+        :macros => {:NATIVE => true,:TEST => false, :NODEJS => false}
+    }).parse.result
 else
-	BuildOptions = {
-		:native => {:macros=>{:Version=>:native}},
-		:module => {:macros=>{:Version=>:module}}
-	}
-    namespace :build do
-        desc 'generate release code'
-        task :generate, :version do |task, args|
-            which = args.version.nil? ? :module : :native
-			opt = BuildOptions[which]
-            File.open "aztec.release.js", "w" do |file|
-				file.puts JavaScriptPreprocessor2.new('./src/aztec.js',opt).parse.result
-                puts "build #{which} version OK!"
-            end
+    
+    desc 'build release code'
+    task :build, :native,:test,:nodejs do |task, args|
+        macros = {
+            :NATIVE => !!args.native,
+            :TEST   => !!args.test,
+            :NODEJS => !!args.nodejs
+        }
+        File.open "aztec.release.js", "w" do |file|
+			file.puts JavaScript::Preprocessor.new('./src/aztec.js',{:macros => macros}).parse.result
+            puts "build '#{macros.to_s}' OK!"
         end
+    end
+    
+    desc 'check syntax'
+    task :lint do |task,args|
+        raise NotImplementedError
+    end
+    
+    desc 'test'
+    task :test, :native do |task,args|
+        Rake::Task[:build].invoke !!args.native, true, true
     end
 end

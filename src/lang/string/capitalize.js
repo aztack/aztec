@@ -1,7 +1,7 @@
 /**
  * capitalzie string started with letters
  */
-//# if defined(:Native)
+//# if defined(:NATIVE)
 exports.capitalize = function() {
     return this.replace( /^([a-zA-Z])/ , function(a, m, i) {
         return m.toUpperCase();
