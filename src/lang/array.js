@@ -1,12 +1,13 @@
+/// <reference path="../utils.js" />
 /********************
  * Array
  ********************/
-//# if defined :NATIVE
-//#     define :ARRAY,"Array.prototype"
-//# else
-//#     define :ARRAY,"aztec.array"
-$ARRAY$ = { };
-//# end
-(function (exports) {
-    //#=include_dir './array/*.js'
-})($ARRAY$);
+(function () {
+    var array = $ARRAY$;
+    array.forEach = $forEach || function (ary, callback) {
+        var i = 0, len = ary.length;
+        for (; i < len; ++i) {
+            callback(ary[i]);
+        }
+    };
+})();
