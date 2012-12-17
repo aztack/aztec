@@ -1,9 +1,8 @@
 /**
  * type
  */
-$TYPE$ = {};
 (function () {
-    var toString = Object.prototype.toString,
+    var type = $AZTEC$.type = {},
         sObject = '[object Object]',
         sNumber = '[object Number]',
         sString = '[object String',
@@ -12,21 +11,22 @@ $TYPE$ = {};
         sDate = '[object Date]',
         sRegExp = '[object RegExp]',
         sUndefined = 'undefined';
+    $AZTEC$.config.modules['lang.type'] = type;
 
     type.isNumber = function(n) {
-        return isFinite(n) && toString.call(n) === sNumber;
+        return isFinite(n) && $toString.call(n) === sNumber;
     };
 
     type.isString = function(s) {
-        return toString.call(s) === sString;
+        return $toString.call(s) === sString;
     };
 
     type.isArray = Array.isArray || function(a) {
-        return toString.call(a) === sArray;
+        return $toString.call(a) === sArray;
     };
 
     type.isFunction = function(f) {
-        return toString.call(f) === sFunction;
+        return $toString.call(f) === sFunction;
     };
 
     type.isUndefined = function(o) {
@@ -42,7 +42,7 @@ $TYPE$ = {};
     
     //# if defined(:BROWSER)
     type.isWindow = function(w) {
-        return w && typeof(w) === 'object' && ('setInterval' in w);
+        return $IS_OBJECT$(w) && $IS_OBJECT$(w.document) && $IS_OBJECT$(w.navigator)
     };
     //# end
 

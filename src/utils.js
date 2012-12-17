@@ -28,12 +28,7 @@ function _mix(target,source) {
 //object
 var $toString = Object.prototype.toString,
     $hasOwnProperty = Object.prototype.hasOwnProperty,
-    $keys = Object.keys,
 //array
     $push = Array.prototype.push,
     $slice = Array.prototype.slice,
-    $indexOf = Array.prototype.indexOf,
-    $forEach = Array.prototype.forEach,
-    $isArray = Array.isArray,
-//string
-    $trim = String.prototype.trim;
+    $indexOf = Array.prototype.indexOf;

@@ -2,14 +2,8 @@
  * String
  ********************/
 (function () {
-    var string = $STRING$,
-    //# if defined(:NATIVE)
-        cString = String;
-    //# elsif defined(:BROWSER)
-        cString = string;
-    //# end
-
-    cString.empty = '';
+    var string = $AZTEC$.string = { empty: '' };
+    $AZTEC$.config.modules['lang.string'] = string;
 
     string.toInt = function (s, radix) {
         return parseInt(s, radix || 10);
@@ -37,8 +31,8 @@
         return s === string.empty || s.length === 0;
     };
 
-    string.strip = $trim ? function (s) {
-        return $.trim.call(s);
+    string.strip = String.prototype.trim ? function (s) {
+        return String.prototype.trim.call(s);
     } : function (s) {
         return s.replace(/^\s+|\s+$/g, '');
     };

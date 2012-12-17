@@ -2,7 +2,8 @@
  * Object
  ********************/
 (function () {
-    var object = $OBJECT$;
+    var object = $AZTEC$.object = {};
+    $AZTEC$.config.modules['lang.object'] = object;
 
     object.extend = function (target, source) {
         for (var i in source) {

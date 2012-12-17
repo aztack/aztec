@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe17f257-9408-4f5f-8dbb-467198aa5ce4" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\aztec.release.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\array\zip.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\browser.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\dom.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\hash.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\string\capitalize.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\string\strip.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\lang\string\to_i.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\src\unittest.js" afterPath="" />
+    <list default="true" id="fe17f257-9408-4f5f-8dbb-467198aa5ce4" name="Default" comment="update">
+      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\jsl.conf" afterPath="" />
+      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\jsl.exe" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beautify.js" afterPath="$PROJECT_DIR$/beautify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rakefile.rb" afterPath="$PROJECT_DIR$/rakefile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release.cmd" afterPath="$PROJECT_DIR$/release.cmd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aztec.js" afterPath="$PROJECT_DIR$/src/aztec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/browser.js" afterPath="$PROJECT_DIR$/src/browser/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/dom.js" afterPath="$PROJECT_DIR$/src/browser/dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/event.js" afterPath="$PROJECT_DIR$/src/browser/event.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/array.js" afterPath="$PROJECT_DIR$/src/lang/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/object.js" afterPath="$PROJECT_DIR$/src/lang/object.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/string.js" afterPath="$PROJECT_DIR$/src/lang/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/type.js" afterPath="$PROJECT_DIR$/src/lang/type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/macros.js" afterPath="$PROJECT_DIR$/src/macros.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils.js" afterPath="$PROJECT_DIR$/src/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/version.js" afterPath="$PROJECT_DIR$/src/version.js" />
     </list>
     <ignored path="aztec.iws" />
@@ -34,48 +38,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rakefile.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rakefile.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="413" column="11" selection-start="14128" selection-end="14128" vertical-scroll-proportion="0.2635379">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/version.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="array.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lang/array.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aztec.preprocessed.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/release/aztec.preprocessed.js">
+      <file leaf-file-name="enumerable.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lang/enumerable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+            <state line="18" column="25" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="macros.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/macros.js">
+      <file leaf-file-name="object.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lang/object.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+            <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.33186814">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_enumerable.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_enumerable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="string.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lang/string.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rakefile.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rakefile.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="33" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="release.cmd" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/release.cmd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +104,27 @@
       <file leaf-file-name="aztec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aztec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="61" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="26" column="4" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/browser/browser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/browser/event.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="36" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,15 +143,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/lang/object.js" />
-        <option value="$PROJECT_DIR$/src/lang/array.js" />
         <option value="$PROJECT_DIR$/src/browser/browser.js" />
+        <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/src/lang/array.js" />
+        <option value="$PROJECT_DIR$/src/lang/object.js" />
+        <option value="$PROJECT_DIR$/src/lang/type.js" />
+        <option value="$PROJECT_DIR$/src/browser/dom.js" />
         <option value="$PROJECT_DIR$/src/browser/event.js" />
-        <option value="$PROJECT_DIR$/src/version.js" />
-        <option value="$PROJECT_DIR$/src/macros.js" />
-        <option value="$PROJECT_DIR$/src/lang/string.js" />
+        <option value="$PROJECT_DIR$/src/browser/ua.js" />
         <option value="$PROJECT_DIR$/src/aztec.js" />
         <option value="$PROJECT_DIR$/rakefile.rb" />
+        <option value="$PROJECT_DIR$/release.cmd" />
+        <option value="$PROJECT_DIR$/beautify.js" />
+        <option value="$PROJECT_DIR$/test/test_enumerable.js" />
+        <option value="$PROJECT_DIR$/src/lang/string.js" />
+        <option value="$PROJECT_DIR$/release/aztec.preprocessed.js" />
+        <option value="$PROJECT_DIR$/src/lang/enumerable.js" />
       </list>
     </option>
   </component>
@@ -129,10 +176,31 @@
             <id />
           </State>
           <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
             <id>Control flow issuesJavaScript</id>
           </State>
           <State>
             <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+          <State>
+            <id>SQL</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -197,57 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="browser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aztec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="release" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,14 +277,24 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Yaml" />
+    <property name="options.lastSelected" value="preferences.RubyMineExtensions" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Rake.build:browser[test,native,camel]">
-    <configuration default="false" name="build:browser[env,test,native,camel]" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\doc\GitHub\aztec\lib\JavaScriptToolkit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\doc\GitHub\aztec\bin" />
+      <recent name="E:\doc\GitHub\aztec\lib\JavaScriptToolkit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Rake.build:browser">
+    <configuration default="false" name="build:browser" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="aztec" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
@@ -276,27 +304,7 @@
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="build:browser[env,test,native,camel]" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="build:browser[test,native,camel]" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="aztec" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="build:browser[test,native,camel]" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="build:browser" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -382,14 +390,14 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Rake.build:browser[env,test,native,camel]" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.build:browser[test,native,camel]" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Rake.build:browser" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Rake.build:browser[test,native,camel]" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.build:browser[env,test,native,camel]" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Rake.build:browser" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.build:browser[test,native,camel]" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.build:browser[env,test,native,camel]" />
       </list>
     </recent_temporary>
   </component>
@@ -421,21 +429,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328877" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.77540106" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67112297" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22459893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -477,7 +486,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -490,95 +499,132 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lang/object.js">
+    <entry file="file://$PROJECT_DIR$/src/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+        <state line="33" column="39" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/browser/browser.js">
+    <entry file="file://$PROJECT_DIR$/src/lang/type.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="3" selection-start="944" selection-end="944" vertical-scroll-proportion="1.5">
+        <state line="13" column="33" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/browser/dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/browser/event.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.71428573">
+        <state line="5" column="36" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizzle.js">
+    <entry file="file://$PROJECT_DIR$/src/browser/browser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="250" selection-end="250" vertical-scroll-proportion="0.44060475">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.49434572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/version.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lang/string.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="54" selection-end="54" vertical-scroll-proportion="0.06137184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lang/array.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+        <state line="10" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aztec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="61" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+        <state line="26" column="4" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rakefile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="33" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/macros.js">
+    <entry file="file://$PROJECT_DIR$/release/aztec.release.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+        <state line="18" column="25" selection-start="303" selection-end="304" vertical-scroll-proportion="-6.8330956">
+          <folding>
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="/** internal utility ...*/" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1355735602636" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="246" selection-end="246" vertical-scroll-proportion="0.14127424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lang/array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lang/string.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/release/aztec.preprocessed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+        <state line="75" column="12" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.8960177">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rakefile.rb">
+    <entry file="file://$PROJECT_DIR$/test/test_enumerable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="11" selection-start="14128" selection-end="14128" vertical-scroll-proportion="0.2635379">
+        <state line="16" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lang/enumerable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lang/object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.33186814">
           <folding />
         </state>
       </provider>

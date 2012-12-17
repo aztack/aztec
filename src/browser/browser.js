@@ -3,15 +3,17 @@
 * http://www.useragentstring.com/pages/useragentstring.php
 */
 
-(function () {
+!$IS_UNDEFINED$(window) && (function () {
 
-    var browser = $AZTEC$.browser = { version: $VER_BROWSER$ },
+    var browser = $AZTEC$.browser = {},
         ua = navigator.userAgent,
         rChrome = /(Chrome).*?(\d+\.\d+)/i,
         rOpera = /Opera(\/| )(\d+(\.\d+)?)(.+?(version\/(\d+(\.\d+)?)))?/i ,
         rMsie = /MSIE (\d+)/i,
         rFirefox = /Firefox\/(\d+\.\d+)/i,
         m;
+
+    $AZTEC$.config.modules['browser'] = browser;
 
     if(m = ua.match(rChrome)) {
         browser.chrome = {

@@ -1,13 +1,12 @@
-/// <reference path="../utils.js" />
 /********************
  * Array
  ********************/
 (function () {
-    var array = $ARRAY$;
-    array.forEach = $forEach || function (ary, callback) {
-        var i = 0, len = ary.length;
-        for (; i < len; ++i) {
-            callback(ary[i]);
-        }
-    };
+    var array = $AZTEC$.array = {},
+        enumerable = $AZTEC$.enumerable;
+
+    $AZTEC$.config.modules['lang.array'] = array;
+
+    array.forEach = enumerable.forEach;
+
 })();
