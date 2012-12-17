@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe17f257-9408-4f5f-8dbb-467198aa5ce4" name="Default" comment="update">
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\jsl.conf" afterPath="" />
-      <change type="DELETED" beforePath="E:\doc\GitHub\aztec\jsl.exe" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+    <list default="true" id="fe17f257-9408-4f5f-8dbb-467198aa5ce4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beautify.js" afterPath="$PROJECT_DIR$/beautify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rakefile.rb" afterPath="$PROJECT_DIR$/rakefile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/release.cmd" afterPath="$PROJECT_DIR$/release.cmd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aztec.js" afterPath="$PROJECT_DIR$/src/aztec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/browser.js" afterPath="$PROJECT_DIR$/src/browser/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/dom.js" afterPath="$PROJECT_DIR$/src/browser/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/browser/event.js" afterPath="$PROJECT_DIR$/src/browser/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/array.js" afterPath="$PROJECT_DIR$/src/lang/array.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/object.js" afterPath="$PROJECT_DIR$/src/lang/object.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/string.js" afterPath="$PROJECT_DIR$/src/lang/string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lang/type.js" afterPath="$PROJECT_DIR$/src/lang/type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/macros.js" afterPath="$PROJECT_DIR$/src/macros.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils.js" afterPath="$PROJECT_DIR$/src/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/version.js" afterPath="$PROJECT_DIR$/src/version.js" />
     </list>
     <ignored path="aztec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +42,7 @@
       <file leaf-file-name="object.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lang/object.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.33186814">
+            <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.21825963">
               <folding />
             </state>
           </provider>
@@ -425,19 +408,24 @@
       <created>1355723930484</created>
       <updated>1355723930484</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1355735768354</created>
+      <updated>1355735768354</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328877" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67112297" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67112297" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -624,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lang/object.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.33186814">
+        <state line="9" column="43" selection-start="284" selection-end="284" vertical-scroll-proportion="0.21825963">
           <folding />
         </state>
       </provider>
